@@ -9,19 +9,24 @@
 
 Firstly, you have to create a PROS project in your local computer. Visual Studio Code and PROS Plugin are really 
 
-Then you can download last release in here and unzip it.
+Download last release in here and unzip it.
 
-`cp include/config.h YOUR_PROS_PROJ/include/config.h`
-`cp include/starter-kit YOUR_PROS_PROJ/include/start-kit`
-`cp src/start-kit YOUR_PROS_PROJ/src/start-kit`
+Copy the header files and c files to the same folder in your project. 
 
+```
+# Linux commands that demonstreate what files you should copy
+cp include/config.h $YOUR_PROS_PROJ/include/config.h
+cp include/starter-kit $YOUR_PROS_PROJ/include/start-kit
+cp src/start-kit $YOUR_PROS_PROJ/src/start-kit
+```
 
-Include head code to your `include/main.h`
+Write `include` code the `include/main.h` in your project.
 
 ```
 #include "config.h"
 #include "start-kit/automation_selection.h"
 #include "start-kit/chassis_track.h"
+// include what you need from start-kit here
 ```
 
 Now, you can just use, learn, and change these various code in your project.
